@@ -1,0 +1,7 @@
+<h1>Listing groups</h1>
+
+<ul>
+  <% @isco_first_level_groups.each do |isco_first_level_group| %>
+    <li><%= link_to isco_first_level_group, isco_first_level_group_isco_second_level_groups_path(isco_first_level_group) %></li>
+  <% end %>
+</ul>

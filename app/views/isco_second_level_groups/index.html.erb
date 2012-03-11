@@ -1,0 +1,9 @@
+<h1><%= @isco_first_level_group %></h1>
+
+<ul>
+  <% @isco_second_level_groups.each do |isco_second_level_group| %>
+    <li><%= link_to isco_second_level_group, isco_first_level_group_isco_second_level_group_isco_third_level_groups_path(@isco_first_level_group, isco_second_level_group) %></li>
+  <% end %>
+</ul>
+
+<%= link_to '&larr; Back'.html_safe, isco_first_level_groups_path %>
